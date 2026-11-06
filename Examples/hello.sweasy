@@ -14,3 +14,4 @@ Get current date into today
 Get current time into now
 Say "Current Date: {today}"
 Say "Current Time: {now}"
+

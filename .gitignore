@@ -1,8 +1,49 @@
+# ==============================================================================
+# Sweasy & Swift .gitignore
+# ==============================================================================
+
+# --- macOS System Files ---
 .DS_Store
-/.build
-/Packages
-xcuserdata/
+.AppleDouble
+.LSOverride
+Icon\r\r
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Swift Package Manager & Build Artifacts ---
+.build/
+Packages/
 DerivedData/
-.swiftpm/configuration/registries.json
-.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
-.netrc
+.swiftpm/
+Package.resolved
+
+# --- Compiled Binaries & Build Outputs ---
+bin/*
+!bin/.gitkeep
+*.o
+*.dylib
+*.a
+*.dSYM/
+*.dSYM.zip
+
+# --- Xcode Files & User Specific State ---
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+*.xcuserstate
+xcuserdata/
+
+# --- Code Editors & IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+
+# --- Sweasy Temporary & Test Output Files ---
+*.out
+*.tmp
+sweasy_note.txt

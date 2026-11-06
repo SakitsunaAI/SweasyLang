@@ -221,3 +221,4 @@ func _sweasy_shell(_ command: String) -> String {
 
 """#
 }
+

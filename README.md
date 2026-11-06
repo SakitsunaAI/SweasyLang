@@ -296,3 +296,4 @@ Try running any of the provided examples:
 # Functions
 ./bin/sweasy run Examples/functions.sweasy
 ```
+
