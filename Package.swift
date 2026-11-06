@@ -1,15 +1,30 @@
 // swift-tools-version: 6.2
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
 import PackageDescription
 
 let package = Package(
     name: "sweasy",
+    products: [
+        .executable(
+            name: "sweasy",
+            targets: ["sweasy"]
+        ),
+        .library(
+            name: "SweasyCore",
+            targets: ["SweasyCore"]
+        )
+    ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
+        .target(
+            name: "SweasyCore",
+            dependencies: []
+        ),
         .executableTarget(
-            name: "sweasy"
+            name: "sweasy",
+            dependencies: ["SweasyCore"]
+        ),
+        .testTarget(
+            name: "SweasyTests",
+            dependencies: ["SweasyCore"]
         ),
     ]
 )
