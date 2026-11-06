@@ -1,0 +1,16 @@
+# -------------------------------------------------------------
+# Hello World in Sweasy
+# -------------------------------------------------------------
+
+Say "Welcome to Sweasy!"
+Say "The world's easiest programming language, powered by Swift."
+
+Set name to "Explorer"
+Let year be 2026
+
+Say "Hello {name}, welcome to the year {year}!"
+
+Get current date into today
+Get current time into now
+Say "Current Date: {today}"
+Say "Current Time: {now}"

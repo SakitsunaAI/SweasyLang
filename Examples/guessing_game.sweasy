@@ -1,0 +1,25 @@
+# -------------------------------------------------------------
+# Number Guessing Game in Sweasy
+# -------------------------------------------------------------
+
+Say "=== Welcome to the Sweasy Guessing Game! ==="
+Say "I am thinking of a number between 1 and 50."
+
+Get random number between 1 and 50 into target
+Set attempts to 0
+
+Repeat:
+    Ask user for guess as integer with "Enter your guess: "
+    Increase attempts by 1
+
+    If guess is equal to target:
+        Say "🎉 Correct! You found the number in {attempts} attempts!"
+        Break
+    Otherwise if guess is less than target:
+        Say "Too low! Aim higher."
+    Otherwise:
+        Say "Too high! Aim lower."
+    End
+End
+
+Say "Thanks for playing!"

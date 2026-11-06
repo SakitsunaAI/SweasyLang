@@ -1,0 +1,24 @@
+# -------------------------------------------------------------
+# Natural English Calculator in Sweasy
+# -------------------------------------------------------------
+
+Set a to 25
+Set b to 4
+
+Say "Number A is", a
+Say "Number B is", b
+
+Set sum to a plus b
+Set difference to a minus b
+Set product to a times b
+Set quotient to a divided by b
+Set remainder to a modulo b
+
+Say "{a} plus {b} is {sum}"
+Say "{a} minus {b} is {difference}"
+Say "{a} times {b} is {product}"
+Say "{a} divided by {b} is {quotient}"
+Say "{a} modulo {b} is {remainder}"
+
+Set root to square root of 144
+Say "Square root of 144 is {root}"

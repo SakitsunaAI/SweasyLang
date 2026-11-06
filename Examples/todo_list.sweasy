@@ -1,0 +1,29 @@
+# -------------------------------------------------------------
+# To-Do List Manager in Sweasy
+# -------------------------------------------------------------
+
+Set tasks to ["Learn Sweasy", "Build an iOS App", "Drink coffee"]
+
+Say "Initial tasks:"
+For each task in tasks:
+    Say "•", task
+End
+
+Say ""
+Say "Adding new task..."
+Add "Walk the dog" to tasks
+
+Say "Updated tasks:"
+For each task in tasks:
+    Say "•", task
+End
+
+Say ""
+Say "Removing 'Drink coffee'..."
+Remove "Drink coffee" from tasks
+
+Say "Final tasks (sorted):"
+Sort tasks
+For each task in tasks:
+    Say "✓", task
+End

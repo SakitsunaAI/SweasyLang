@@ -1,0 +1,30 @@
+# -------------------------------------------------------------
+# File Operations in Sweasy
+# -------------------------------------------------------------
+
+Set filename to "sweasy_note.txt"
+Set content to "Sweasy makes coding feel like writing a story.\nPowered natively by Swift!"
+
+Say "Writing text to {filename}..."
+Write content to file filename
+
+Check if file filename exists into exists
+If exists is equal to true:
+    Say "File created successfully!"
+End
+
+Say "Reading back file contents:"
+Read file filename into fileData
+Say "--- File Content Start ---"
+Say fileData
+Say "--- File Content End ---"
+
+Say "Appending more text..."
+Append "\nAdded another line seamlessly!" to file filename
+
+Read file filename into updatedData
+Say "Updated file:"
+Say updatedData
+
+Delete file filename
+Say "Cleaned up temporary file."

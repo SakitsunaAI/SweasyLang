@@ -1,0 +1,27 @@
+# -------------------------------------------------------------
+# Functions and Logic in Sweasy
+# -------------------------------------------------------------
+
+Function greet person with name:
+    Say "Hello, {name}! Welcome to Sweasy functions."
+End
+
+Function multiply numbers with a as Int, b as Int returning Int:
+    Return a times b
+End
+
+Function is even with number as Int returning Bool:
+    If number modulo 2 is equal to 0:
+        Return true
+    Otherwise:
+        Return false
+    End
+End
+
+Call greet_person with "Alice"
+
+Set result to multiply_numbers(6, 7)
+Say "6 times 7 is {result}"
+
+Set check to is_even(42)
+Say "Is 42 even? {check}"
